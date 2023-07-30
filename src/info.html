@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allison & Jeff Wedding Website</title>
+    <!--Heading Font-->
+    <link rel="stylesheet" href="https://use.typekit.net/ifj6qxh.css">
+    <!--Body Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,800;1,400;1,500;1,800&display=swap" rel="stylesheet">
+    <!--Tailwind CSS-->
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-pink-400 font-mono text-lg bg-fixed" style="background-image:url('/src/img/textures/noise.png')">
+    <!--HEADER-->
+    <header class="flex flex-wrap max-w-full py-4 px-4 md:px-8 items-start w-full z-50">
+        <div class="rsvp w-1/3">
+            <a href="rsvp.html" class="uppercase font-bold font-mono text-xl lg:text-2xl border-b hover:border-0 border-black">RSVP</a>
+        </div>
+        <div class="logo w-1/3 text-center">
+            <a href="index.html" class="uppercase text-center font-medium font-mono text-xl lg:text-2xl">
+             <img src="/src/img/heart-purple.png" alt="Heart Icon" class="w-20 mx-auto"/>
+             <span class="sr-only">Home</span>
+            </a>
+        </div>
+        <div class="menu w-1/3 flex justify-end">
+        <div class="button_container group fixed top-5 right-5 h-7 w-10 cursor-pointer z-50 transition-[opacity .25s ease] hover:opacity-100" id="toggle">
+            <span class="top absolute group-[.active]:bg-yellow-500 group-[.active]:translate-y-[11px] group-[.active]:translate-x-0 group-[.active]:rotate-45 bg-black border-0 h-1 w-full top-0 left-0 cursor-pointer transition-[all .35s ease]"></span>
+            <span class="middle absolute top-[11px]  group-[.active]:bg-yellow-500 group-[.active]:opacity-0  bg-black border-0 h-1 w-full top-0 left-0 cursor-pointer transition-[all .35s ease]"></span>
+            <span class="bottom absolute top-[22px] group-[.active]:bg-yellow-500 group-[.active]:translate-y-[-11px] group-[.active]:translate-x-0 group-[.active]:-rotate-45  bg-black border-0 h-1 w-full top-0 left-0 cursor-pointer transition-[all .35s ease]"></span>
+        </div>
+        <div class="overlay group fixed bg-purple-900 bg-repeat top-0 left-0 w-full h-0 opacity-0  transition-[opacity .35s, visibility .35s, height .35s] overflow-hidden" style="background-image:url('/src/img/textures/dark-checkers.png'); " id="overlay">      
+            <nav class="overlay-menu relative h-70 md:py-20 -translate-y-50 text-9xl text-center">
+                <ul class="list-none flex md:block flex-col md:flex-none justify-center  p-0 mx-auto inline-block relative h-full ">
+                    <li class="block mb-4 group-[.open]:animate-[fadeInDown_1s_ease_forwards]  relative opacity-0"><a class="urbana uppercase text-7xl md:text-8xl lg:text-9xl font-bold text-yellow-400 bg-repeat bg-clip-text text-fill-trans bg-yellow-texture hover:bg-red-texture hover:text-red-600" href="rsvp.html">RSVP</a></li>
+                    <li class="block mb-4 group-[.open]:animate-[fadeInDown_1s_ease_forwards] group-[.open]:delay-200	  relative opacity-0"><a class="urbana uppercase text-7xl md:text-8xl lg:text-9xl font-bold text-yellow-400 bg-repeat bg-clip-text text-fill-trans bg-yellow-texture hover:bg-red-texture hover:text-red-600" href="itinerary.html">Itinerary</a></li>
+                    <li class="block mb-4 group-[.open]:animate-[fadeInDown_1s_ease_forwards] group-[.open]:delay-500 relative opacity-0"><a class="urbana uppercase text-7xl md:text-8xl lg:text-9xl font-bold text-yellow-400 bg-repeat bg-clip-text text-fill-trans bg-yellow-texture hover:bg-red-texture hover:text-red-600" href="info.html">Info</a></li>
+                    <li class="block mb-4 group-[.open]:animate-[fadeInDown_1s_ease_forwards] group-[.open]:delay-1000 relative opacity-0"><a class="urbana uppercase text-7xl md:text-8xl lg:text-9xl font-bold text-yellow-400 bg-repeat bg-clip-text text-fill-trans bg-yellow-texture hover:bg-red-texture hover:text-red-600" href="story.html">Our Story</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--END HEADER-->
+        <div class="w-full px-4 mx-auto max-w-screen-xl mt-12">
+             <!--INTRO-->
+        <h1 class="urbana text-6xl md:text-8xl tracking-wide font-extrabold mb-4 uppercase">All The Info</h1>
+        
+        <!--END INTRO-->
+            <div class="lg:flex">
+                <aside id="sidebar" class="flex overflow-y-auto lg:sticky lg:top-28 flex-col lg:pt-10 pb-6 lg:h-[calc(100vh-5rem)] " aria-labelledby="sidebar-label">
+                    <h4 id="sidebar-label" class="font-bold uppercase mb-4">JUMP TO:</h4>
+                        <ul class="list-disc ml-4 font-medium">
+                            <li class="mb-2"><a class="underline hover:no-underline" href="#contact">Contact Info</a></li>
+                            <li class="mb-2"><a class="underline hover:no-underline" href="#accommodations">Accommodations</a></li>
+                            <li class="mb-2"><a class="underline hover:no-underline" href="#athens">Athens Reccomendations</a></li>
+                            <li class="mb-2"><a class="underline hover:no-underline" href="#dayone">Day One: Welcome Party at Athentic Brewing</a></li>
+                            <li class="mb-2"><a class="underline hover:no-underline" href="#daytwo">Day Two: Wedding at Georgia Museum of Art</a></li>
+                            <li class="mb-2"><a class="underline hover:no-underline" href="#afterparty">Day Two: After Party at Puma Yu's</a></li>
+                            <li class="mb-2"><a class="underline hover:no-underline" href="#daythree">Day Three: Brunch at Mom & Dad's</a></li>
+                        </ul>
+                </aside>
+                <div class="fixed inset-0 z-10 hidden bg-gray-900/50 dark:bg-gray-900/60" id="sidebarBackdrop"></div>
+                    <main id="content-wrapper" class="flex-auto w-full min-w-0 lg:static lg:max-h-full lg:overflow-visible lg:pl-16">
+                        <div class="w-full">
+                            
+                            <!--Contact Info-->
+                            <div id="contact" class="intro my-8 mt-4 lg:mt-8">
+                                <h2 class="font-bold uppercase text-2xl mb-8">Contact Info</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id elit ut purus cursus tempor vitae eget felis. Mauris dui nibh, lobortis at ornare eget, placerat ut metus. Phasellus in feugiat augue. Nam eu varius dolor. Donec iaculis arcu quis enim dapibus, vel facilisis sapien hendrerit. </p>
+                            </div>
+                            <hr class="h-1 bg-red-500">
+                            <!--Accommodations-->
+                            <div id="accommodations" class="intro my-8">
+                                <h2 class="font-bold uppercase text-2xl mb-8">Accommodatiosn</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id elit ut purus cursus tempor vitae eget felis. Mauris dui nibh, lobortis at ornare eget, placerat ut metus. Phasellus in feugiat augue. Nam eu varius dolor. Donec iaculis arcu quis enim dapibus, vel facilisis sapien hendrerit. </p>
+                            </div>
+                            <hr class="h-1 bg-red-500">
+                            <!--Athens-->
+                            <div id="athens" class="intro my-8">
+                                <h2 class="font-bold uppercase text-2xl mb-8">Athens Reccomendations</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id elit ut purus cursus tempor vitae eget felis. Mauris dui nibh, lobortis at ornare eget, placerat ut metus. Phasellus in feugiat augue. Nam eu varius dolor. Donec iaculis arcu quis enim dapibus, vel facilisis sapien hendrerit. </p>
+                            </div>
+                            <hr class="h-1 bg-red-500">
+                            <!--Day One-->
+                            <div id="dayone" class="intro my-8">
+                                <h2 class="font-bold uppercase text-2xl mb-8">Day One: Welcome Party at Athentic Brewing</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id elit ut purus cursus tempor vitae eget felis. Mauris dui nibh, lobortis at ornare eget, placerat ut metus. Phasellus in feugiat augue. Nam eu varius dolor. Donec iaculis arcu quis enim dapibus, vel facilisis sapien hendrerit. </p>
+                            </div>
+                            <hr class="h-1 bg-red-500">
+                            <!--Day Two - GMOA-->
+                            <div id="daytwo" class="intro my-8">
+                                <h2 class="font-bold uppercase text-2xl mb-8">Day Two: Ceremony & Reception at GMOA</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id elit ut purus cursus tempor vitae eget felis. Mauris dui nibh, lobortis at ornare eget, placerat ut metus. Phasellus in feugiat augue. Nam eu varius dolor. Donec iaculis arcu quis enim dapibus, vel facilisis sapien hendrerit. </p>
+                            </div>
+                            <hr class="h-1 bg-red-500">
+                            <!--Day Two - After Party-->
+                            <div id="afterparty" class="intro my-8">
+                                <h2 class="font-bold uppercase text-2xl mb-8">Day Two: After Party at Puma Yu's</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id elit ut purus cursus tempor vitae eget felis. Mauris dui nibh, lobortis at ornare eget, placerat ut metus. Phasellus in feugiat augue. Nam eu varius dolor. Donec iaculis arcu quis enim dapibus, vel facilisis sapien hendrerit. </p>
+                            </div>
+                            <hr class="h-1 bg-red-500">
+                            <!--Day Three - Brunch -->
+                            <div id="brunch" class="intro my-8">
+                                <h2 class="font-bold uppercase text-2xl mb-8">Day Three: Brunch</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id elit ut purus cursus tempor vitae eget felis. Mauris dui nibh, lobortis at ornare eget, placerat ut metus. Phasellus in feugiat augue. Nam eu varius dolor. Donec iaculis arcu quis enim dapibus, vel facilisis sapien hendrerit. </p>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    
+
+    
+
+        <div class="credit text-center  px-4 md:py-8 ">
+            <p class="font-mono text-black font-medium text-sm">Website designed & coded by the bride herself 🦋 | <a href="https://allisondskinner.com" class="underline hover:no-underline" target="_blank">See more of Allison's work!</a> </p>
+           </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    $('#toggle').click(function() {
+   $(this).toggleClass('active');
+
+   $('#overlay').toggleClass('open opacity-100 visible h-full');
+   $('#sidebar').toggleClass('hidden');
+  });
+</script>
+    
+</body>
+</html>

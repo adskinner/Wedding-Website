@@ -1,0 +1,295 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allison & Jeff Wedding Website</title>
+    <!--Heading Font-->
+    <link rel="stylesheet" href="https://use.typekit.net/ifj6qxh.css">
+    <!--Body Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,800;1,400;1,500;1,800&display=swap" rel="stylesheet">
+    <!--Tailwind CSS-->
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-pink-400 font-mono text-lg bg-fixed" style="background-image:url('/src/img/textures/noise.png')">
+    <!--HEADER-->
+    <header class="flex flex-wrap max-w-full py-4 px-4 md:px-8 items-start w-full z-50">
+        <div class="rsvp w-1/3">
+            <a href="rsvp.html" class="uppercase font-bold font-mono text-xl lg:text-2xl border-b hover:border-0 border-black">RSVP</a>
+        </div>
+        <div class="logo w-1/3 text-center">
+            <a href="index.html" class="uppercase text-center font-medium font-mono text-xl lg:text-2xl">
+             <img src="/src/img/heart-purple.png" alt="Heart Icon" class="w-20 mx-auto"/>
+             <span class="sr-only">Home</span>
+            </a>
+        </div>
+        <div class="menu w-1/3 flex justify-end">
+        <div class="button_container group fixed top-5 right-5 h-7 w-10 cursor-pointer z-50 transition-[opacity .25s ease] hover:opacity-100" id="toggle">
+            <span class="top absolute group-[.active]:bg-yellow-500 group-[.active]:translate-y-[11px] group-[.active]:translate-x-0 group-[.active]:rotate-45 bg-black border-0 h-1 w-full top-0 left-0 cursor-pointer transition-[all .35s ease]"></span>
+            <span class="middle absolute top-[11px]  group-[.active]:bg-yellow-500 group-[.active]:opacity-0  bg-black border-0 h-1 w-full top-0 left-0 cursor-pointer transition-[all .35s ease]"></span>
+            <span class="bottom absolute top-[22px] group-[.active]:bg-yellow-500 group-[.active]:translate-y-[-11px] group-[.active]:translate-x-0 group-[.active]:-rotate-45  bg-black border-0 h-1 w-full top-0 left-0 cursor-pointer transition-[all .35s ease]"></span>
+        </div>
+        <div class="overlay group fixed bg-purple-900 bg-repeat top-0 left-0 w-full h-0 opacity-0  transition-[opacity .35s, visibility .35s, height .35s] overflow-hidden" style="background-image:url('/src/img/textures/dark-checkers.png'); " id="overlay">      
+            <nav class="overlay-menu relative h-70 md:py-20 -translate-y-50 text-9xl text-center">
+                <ul class="list-none flex md:block flex-col md:flex-none justify-center  p-0 mx-auto inline-block relative h-full ">
+                    <li class="block mb-4 group-[.open]:animate-[fadeInDown_1s_ease_forwards]  relative opacity-0"><a class="urbana uppercase text-7xl md:text-8xl lg:text-9xl font-bold text-yellow-400 bg-repeat bg-clip-text text-fill-trans bg-yellow-texture hover:bg-red-texture hover:text-red-600" href="rsvp.html">RSVP</a></li>
+                    <li class="block mb-4 group-[.open]:animate-[fadeInDown_1s_ease_forwards] group-[.open]:delay-200	  relative opacity-0"><a class="urbana uppercase text-7xl md:text-8xl lg:text-9xl font-bold text-yellow-400 bg-repeat bg-clip-text text-fill-trans bg-yellow-texture hover:bg-red-texture hover:text-red-600" href="itinerary.html">Itinerary</a></li>
+                    <li class="block mb-4 group-[.open]:animate-[fadeInDown_1s_ease_forwards] group-[.open]:delay-500 relative opacity-0"><a class="urbana uppercase text-7xl md:text-8xl lg:text-9xl font-bold text-yellow-400 bg-repeat bg-clip-text text-fill-trans bg-yellow-texture hover:bg-red-texture hover:text-red-600" href="info.html">Info</a></li>
+                    <li class="block mb-4 group-[.open]:animate-[fadeInDown_1s_ease_forwards] group-[.open]:delay-1000 relative opacity-0"><a class="urbana uppercase text-7xl md:text-8xl lg:text-9xl font-bold text-yellow-400 bg-repeat bg-clip-text text-fill-trans bg-yellow-texture hover:bg-red-texture hover:text-red-600" href="story.html">Our Story</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--END HEADER-->
+    <main class="max-w-full md:py-16 px-4 md:px-8">
+        <!--INTRO-->
+        <h1 class="urbana text-6xl md:text-8xl tracking-wide font-extrabold mb-4 uppercase">The Itinerary</h1>
+        <p class="inline-block font-mono text-lg md:text-xl leading-relaxed">
+            <span class="bg-yellow-400">All guests are *welcome* to all the events over the weekend.</span><br>
+            <span class="bg-yellow-400">Simply <a class="underline hover:no-underline" href="/rsvp">rsvp</a> to what you’ll be able to attend!</span>
+        </p>
+        <!--END INTRO-->
+        <!--DAY ONE-->
+        <div class="max-w-screen-2xl pt-12 md:pt-20 pb-4">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-2/3">
+                    <p class="font-mono text-lg font-extrabold mb-4 uppercase"><span class="bg-lime-300">Day One</span> <span class="text-red-500">*</span> Friday November 17th, 2023</p>
+                    <h2 class="font-mono text-3xl md:text-4xl font-extrabold mb-2 md:mb-4 uppercase">Welcome Party at Athentic Brewing</h2>
+                    <div class="flex flex-wrap pt-2 md:pt-8">
+                        <div class="w-full md:w-1/2 mb-2">
+                            <p class="font-mono text-lg leading-relaxed">Kick off the weekend with a welcome party at the family brewery. We will have a private space at the front of the brewery to gather over brews, bubbles and bites. We’ll have ping pong, karoake and more setup for a great time!</p>
+                        </div>
+                        <div class="w-full md:w-1/2 mb-2 md:pl-8">
+                            <p class="mb-4"><strong class="uppercase">Time:</strong>5pm - 10pm</p>
+                            <p class="mb-4"><strong class="uppercase">Location:</strong>Athentic Brewing [108 Park Ave. Athens, Ga, <a class="underline hover:no-underline" href="#">Map</a> | <a class="underline hover:no-underline" href="https://athenticbrewing.com" target="_blank">View Website</a>]</p>
+                            <p class="mb-4"><strong class="uppercase">Food:</strong>Best Mexican food ever by Homy! Come hungry 😋</p>
+                            <p class="mb-4"><strong class="uppercase">Dress:</strong> Casual</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/3">
+                    <div class="flex justify-start">
+                        <div class="w-1/2 p-1 bg-purple-texture m-2 max-w-[200px]">
+                            <img src="img/placeholder-3.jpg" />
+                        </div>
+                        <div class="w-1/2 p-1 bg-purple-texture m-2 max-w-[200px]">
+                            <img src="img/placeholder-3.jpg"/>
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                        <div class="w-1/2 p-1 bg-purple-texture m-2 max-w-[200px]">
+                            <img src="img/placeholder-3.jpg"/>
+                        </div>
+                        <div class="w-1/2 p-1 bg-purple-texture m-2 max-w-[200px]">
+                            <img src="img/placeholder-3.jpg"/>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <hr class="h-1 bg-red-500 my-4 md:my-8">
+        <!--END DAY ONE-->
+        <!--DAY TWO-->
+        <div class="max-w-full pt-8 md:pt-20 md:pb-4">
+            <p class="font-mono text-lg font-extrabold mb-4 uppercase"><span class="bg-lime-300">Day Two</span> <span class="text-red-500">*</span> Saturday November 18th, 2023</p>
+            <h2 class="font-mono text-3xl md:text-4xl font-extrabold mb-2 md:mb-4 uppercase">THE BIG DAY ~ CEREMONY, RECEPTION & AFTER PARTY!</h2>
+            <div class="flex max-w-screen-2xl flex-wrap pt-2 md:pt-4 lg:pt-8">
+                <div class="w-full lg:w-1/3">
+                    <p class="font-mono text-lg leading-relaxed mb-4">Join us in celebrating Allison and Jeff making the commitment of a lifetime!</p>
+                    <p class="leading-relaxed mb-2"><strong class="uppercase">Time:</strong> 4pm - 11pm (after party continues til 2am!)</p>
+                    <p class="leading-relaxed mb-2"><strong class="uppercase">Location:</strong> Georgia Museum of Art [more info | website] ... After party at Puma Yu's</p>
+                    <p class="leading-relaxed mb-2"><strong class="uppercase">Dress:</strong> Cocktail</p>
+                </div>
+                <div class="w-full lg:w-2/3 lg:pl-8 mt-4 lg:mt-0">
+                    <h3 class="font-bold text-2xl md:text-xl uppercase mb-4">Timeline</h3>
+                    <ol class="relative border-l border-black">                  
+                        <li class="mb-16 ml-4">
+                            <div class="absolute w-3 h-3 bg-red-500 rounded-full mt-1.5 -left-1.5 border border-black"></div>
+                            <div class="flex flex-wrap">
+                                <div class="w-full md:w-1/2">
+                                    <time class="mb-1 text-normal font-normal leading-none text-black">4:00 pm | Georgia Museum of Art<time>
+                                        <h3 class="text-lg font-semibold text-black uppercase">Pre-Ceremony</h3>
+                                        <p class="mb-4 text-base font-normal text-black dark:text-gray-400">Arrive at the Georgia Museum of Art and enjoy a pre-ceremony cocktail before getting settled. </p>
+                                        <a href="#" class="inline-flex items-center px-2 py-1 text-sm font-medium text-black border-black border  rounded-lg hover:bg-black hover:text-white  focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white">Venue Info <svg class="w-3 h-3 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                         </svg></a>
+                                </div>
+                                <div class="w-full md:w-1/2 flex items-start justify-end md:justify-start mt-4 md:mt-0">
+                                    <div class="p-1 bg-purple-texture m-2 max-w-[150px] lg:max-w-[200px]">
+                                        <img src="img/placeholder-3.jpg"/>
+                                    </div>
+                                </div>
+                            
+                            </div>
+
+                        </li>
+                        <li class="mb-16 ml-4">
+                            <div class="absolute w-3 h-3 bg-red-500 rounded-full mt-1.5 -left-1.5 border border-black"></div>
+                            <div class="flex flex-wrap">
+                                <div class="w-full md:w-1/2">
+                                    <time class="mb-1 text-normal font-normal leading-none text-black">4:45 pm | Georgia Museum of Art<time>
+                                    <h3 class="text-lg font-semibold text-black uppercase">Ceremony</h3>
+                                    <p class="mb-4 text-base font-normal text-black">As the sun sets in the sculpture garden, join us in our wedding ceremony.</p>
+                                </div>
+                                <div class="w-full md:w-1/2 flex items-start justify-start md:justify-center mt-4 md:mt-0">
+                                    <div class="p-1 bg-purple-texture m-2 max-w-[150px] lg:max-w-[200px]">
+                                        <img src="img/placeholder-3.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mb-16 ml-4">
+                            <div class="absolute w-3 h-3 bg-red-500 rounded-full mt-1.5 -left-1.5 border border-black"></div>
+                            <div class="flex flex-wrap">
+                                <div class="w-full md:w-1/2">
+                                    <time class="mb-1 text-normal font-normal leading-none text-black">5:30pm - 6:30pm | Georgia Museum of Art<time>
+                                    <h3 class="text-lg font-semibold text-black uppercase">Cocktail Hour & Art Galleries</h3>
+                                    <p class="mb-4 text-base font-normal text-black">Toast to the newlyweds! Gallery spaces will be open during this time. Feel free to explore the entire museum.</p>
+                                    <a href="#" class="inline-flex items-center px-2 py-1 text-sm font-medium text-black border-black border  rounded-lg hover:bg-black hover:text-white  focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white">Art Gallery Guide <svg class="w-3 h-3 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                        </svg></a>
+                                </div>
+                                <div class="w-full md:w-1/2 flex items-start justify-end md:justify-end mt-4 md:mt-0">
+                                    <div class="p-1 bg-purple-texture m-2 max-w-[150px] lg:max-w-[200px]">
+                                        <img src="img/placeholder-3.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mb-16 ml-4">
+                            <div class="absolute w-3 h-3 bg-red-500 rounded-full mt-1.5 -left-1.5 border border-black"></div>
+                            <div class="flex flex-wrap">
+                                <div class="w-full md:w-1/2">
+                                    <time class="mb-1 text-normal font-normal leading-none text-black">6:30pm - 7:30pm | Georgia Museum of Art<time>
+                                    <h3 class="text-lg font-semibold text-black uppercase">Dinner</h3>
+                                    <p class="mb-4 text-base font-normal text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id elit ut purus cursus tempor vitae eget felis. Donec iaculis arcu quis enim dapibus, vel facilisis sapien hendrerit.</p>  
+                                </div>
+                                <div class="w-full md:w-1/2 flex items-start justify-start md:justify-center mt-4 md:mt-0">
+                                    <div class="p-1 bg-purple-texture m-2 max-w-[150px] lg:max-w-[200px]">
+                                        <img src="img/placeholder-3.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mb-16 ml-4">
+                            <div class="absolute w-3 h-3 bg-red-500 rounded-full mt-1.5 -left-1.5 border border-black"></div>
+                            <div class="flex flex-wrap">
+                                <div class="w-full md:w-1/2">
+                                    <time class="mb-1 text-normal font-normal leading-none text-black">7:30pm - 8:00pm | Georgia Museum of Art<time>
+                                    <h3 class="text-lg font-semibold text-black uppercase">Toasts</h3>
+                                    <p class="mb-4 text-base font-normal text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id elit ut purus cursus tempor vitae eget felis. Donec iaculis arcu quis enim dapibus, vel facilisis sapien hendrerit.</p>  
+                                </div>
+                                <div class="w-full md:w-1/2 flex items-start justify-end md:justify-start mt-4 md:mt-0">
+                                    <div class="p-1 bg-purple-texture m-2 max-w-[150px] lg:max-w-[200px]">
+                                        <img src="img/placeholder-3.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="mb-16 ml-4">
+                            <div class="absolute w-3 h-3 bg-red-500 rounded-full mt-1.5 -left-1.5 border border-black"></div>
+                            <div class="flex flex-wrap">
+                                <div class="w-full md:w-1/2">
+                                    <time class="mb-1 text-normal font-normal leading-none text-black">8:00pm - 10:00pm | Georgia Museum of Art<time>
+                                    <h3 class="text-lg font-semibold text-black uppercase">Dance Party!</h3>
+                                    <p class="mb-4 text-base font-normal text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id elit ut purus cursus tempor vitae eget felis. Donec iaculis arcu quis enim dapibus, vel facilisis sapien hendrerit.</p>  
+                                </div>
+                                <div class="w-full md:w-1/2 flex items-start justify-start md:justify-center mt-4 md:mt-0">
+                                    <div class="p-1 bg-purple-texture m-2 max-w-[150px] lg:max-w-[200px]">
+                                        <img src="img/placeholder-3.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mb-16 ml-4">
+                            <div class="absolute w-3 h-3 bg-red-500 rounded-full mt-1.5 -left-1.5 border border-black"></div>
+                            <div class="flex flex-wrap">
+                                <div class="w-full md:w-1/2">
+                                    <time class="mb-1 text-normal font-normal leading-none text-black">10:00pm - 2:00am | Puma Yu's<time>
+                                    <h3 class="text-lg font-semibold text-black uppercase">After Party at Puma Yu's</h3>
+                                    <p class="mb-4 text-base font-normal text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id elit ut purus cursus tempor vitae eget felis. Donec iaculis arcu quis enim dapibus, vel facilisis sapien hendrerit.</p>  
+                                    <a href="#" class="inline-flex items-center px-2 py-1 text-sm font-medium text-black border-black border  rounded-lg hover:bg-black hover:text-white  focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-white">Puma Yu's Info <svg class="w-3 h-3 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                        </svg></a>
+                                </div>
+                                <div class="w-full md:w-1/2 flex items-start justify-end md:justify-end mt-4 md:mt-0">
+                                    <div class="p-1 bg-purple-texture m-2 max-w-[150px] lg:max-w-[200px]">
+                                        <img src="img/placeholder-3.jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ol>
+                </div>
+                
+            </div>
+            
+        </div>
+        <hr class="h-1 bg-red-500 my-4 md:my-8">
+        <!--END DAY TWO-->
+        <!--DAY Three-->
+        <div class="max-w-screen-2xl pt-4 md:pt-20 pb-4">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-2/3">
+                    <p class="font-mono text-lg font-extrabold mb-4 uppercase"><span class="bg-lime-300">Day Three</span> <span class="text-red-500">*</span> Sunday November 18th, 2023</p>
+                    <h2 class="font-mono text-3xl md:text-4xl font-extrabold mb-2 md:mb-4 uppercase">Brunch at Mom & Dad's</h2>
+                    <div class="flex flex-wrap pt-2 md:pt-8">
+                        <div class="w-full md:w-1/2 mb-2">
+                            <p class="font-mono text-lg leading-relaxed">Kick off the weekend with a welcome party at the family brewery. We will have a private space at the front of the brewery to gather over brews, bubbles and bites. We’ll have ping pong, karoake and more setup for a great time!</p>
+                        </div>
+                        <div class="w-full md:w-1/2 mb-2 md:pl-8">
+                            <p class="mb-4"><strong class="uppercase">Time:</strong>5pm - 10pm</p>
+                            <p class="mb-4"><strong class="uppercase">Location:</strong>Athentic Brewing [108 Park Ave. Athens, Ga, <a class="underline hover:no-underline" href="#">Map</a> | <a class="underline hover:no-underline" href="https://athenticbrewing.com" target="_blank">View Website</a>]</p>
+                            <p class="mb-4"><strong class="uppercase">Food:</strong>Best Mexican food ever by Homy! Come hungry 😋</p>
+                            <p class="mb-4"><strong class="uppercase">Dress:</strong> Casual</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/3">
+                    <div class="flex justify-start">
+                        <div class="w-1/2 p-1 bg-purple-texture m-2 max-w-[200px]">
+                            <img src="img/placeholder-3.jpg" />
+                        </div>
+                        <div class="w-1/2 p-1 bg-purple-texture m-2 max-w-[200px]">
+                            <img src="img/placeholder-3.jpg"/>
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                        <div class="w-1/2 p-1 bg-purple-texture m-2 max-w-[200px]">
+                            <img src="img/placeholder-3.jpg"/>
+                        </div>
+                        <div class="w-1/2 p-1 bg-purple-texture m-2 max-w-[200px]">
+                            <img src="img/placeholder-3.jpg"/>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+        <!--END DAY THREE-->
+    </div>
+        
+    </main>
+
+    <div class="credit text-center  px-4 md:py-8 ">
+        <p class="font-mono text-black font-medium text-sm">Website designed & coded by the bride herself 🦋 | <a href="https://allisondskinner.com" class="underline hover:no-underline" target="_blank">See more of Allison's work!</a> </p>
+       </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    $('#toggle').click(function() {
+   $(this).toggleClass('active');
+
+   $('#overlay').toggleClass('open opacity-100 visible h-full');
+  });
+</script>
+    
+</body>
+</html>

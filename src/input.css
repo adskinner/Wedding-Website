@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .urbana {
+        font-family: "urbana", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+    .text-fill-trans {
+        -webkit-text-fill-color: transparent;
+    }
+    .bg-black-texture {
+        background-image:url('/src/img/textures/black-grain.jpg');
+    }
+    .bg-red-texture {
+        background-image:url('/src/img/textures/red-grain.jpg');
+    }
+    .bg-purple-texture {
+        background-image:url('/src/img/textures/purple-grain.png');
+    }
+    .bg-yellow-texture {
+        background-image:url('/src/img/textures/yellow-grain.jpg');
+    }
+    
+}
