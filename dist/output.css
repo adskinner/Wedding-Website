@@ -545,19 +545,19 @@ video {
 }
 
 .bg-black-texture {
-  background-image:url('../img/textures/black-grain.jpg');
+  background-image:url('./img/textures/black-grain.jpg');
 }
 
 .bg-red-texture {
-  background-image:url('../img/textures/red-grain.jpg');
+  background-image:url('./img/textures/red-grain.jpg');
 }
 
 .bg-purple-texture {
-  background-image:url('../img/textures/purple-grain.png');
+  background-image:url('./img/textures/purple-grain.png');
 }
 
 .bg-yellow-texture {
-  background-image:url('../img/textures/yellow-grain.jpg');
+  background-image:url('./img/textures/yellow-grain.jpg');
 }
 
 .sr-only {
@@ -1274,7 +1274,7 @@ video {
 }
 
 .hover\:bg-red-texture:hover {
-  background-image:url('../img/textures/red-grain.jpg');
+  background-image:url('./img/textures/red-grain.jpg');
 }
 
 .hover\:border-0:hover {
