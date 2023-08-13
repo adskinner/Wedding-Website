@@ -8,11 +8,11 @@
     <!--Body Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,800;1,400;1,500;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,800;1,500;1,800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,800;1,400;1,500;1,800&display=swap" rel="stylesheet">
     <!--Tailwind CSS-->
     <link href="dist/output.css" rel="stylesheet">
 </head>
-<body class="bg-pink-400 font-mono text-lg bg-fixed" style="background-image:url('img/textures/noise.png')">
+<body class="bg-pink-300 font-mono text-lg bg-fixed" style="background-image:url('img/textures/noise.png')">
     <!--HEADER-->
     <header class="flex flex-wrap max-w-full py-4 px-4 md:px-8 items-start fixed w-full z-50">
         <div class="rsvp w-1/3">
@@ -20,23 +20,23 @@
         </div>
         <div class="logo w-1/3 text-center">
             <a href="index.html" class="uppercase text-center font-medium font-mono text-xl lg:text-2xl">
-             <img src="img/heart-purple.png" alt="Heart Icon" class="w-20 mx-auto"/>
+             <img src="img/heart-invite.png" alt="Heart Icon" class="w-20 mx-auto"/>
              <span class="sr-only">Home</span>
             </a>
         </div>
         <div class="menu w-1/3 flex justify-end">
         <div class="button_container group fixed top-5 right-5 h-7 w-10 cursor-pointer z-50 transition-[opacity .25s ease] hover:opacity-100" id="toggle">
-            <span class="top absolute group-[.active]:bg-yellow-500 group-[.active]:translate-y-[11px] group-[.active]:translate-x-0 group-[.active]:rotate-45 bg-black border-0 h-1 w-full top-0 left-0 cursor-pointer transition-[all .35s ease]"></span>
-            <span class="middle absolute top-[11px]  group-[.active]:bg-yellow-500 group-[.active]:opacity-0  bg-black border-0 h-1 w-full top-0 left-0 cursor-pointer transition-[all .35s ease]"></span>
-            <span class="bottom absolute top-[22px] group-[.active]:bg-yellow-500 group-[.active]:translate-y-[-11px] group-[.active]:translate-x-0 group-[.active]:-rotate-45  bg-black border-0 h-1 w-full top-0 left-0 cursor-pointer transition-[all .35s ease]"></span>
+            <span class="top absolute group-[.active]:bg-black group-[.active]:translate-y-[11px] group-[.active]:translate-x-0 group-[.active]:rotate-45 bg-black border-0 h-1 w-full top-0 left-0 cursor-pointer transition-[all .35s ease]"></span>
+            <span class="middle absolute top-[11px]  group-[.active]:bg-black group-[.active]:opacity-0  bg-black border-0 h-1 w-full top-0 left-0 cursor-pointer transition-[all .35s ease]"></span>
+            <span class="bottom absolute top-[22px] group-[.active]:bg-black group-[.active]:translate-y-[-11px] group-[.active]:translate-x-0 group-[.active]:-rotate-45  bg-black border-0 h-1 w-full top-0 left-0 cursor-pointer transition-[all .35s ease]"></span>
         </div>
-        <div class="overlay group fixed bg-purple-900 bg-repeat top-0 left-0 w-full h-0 opacity-0  transition-[opacity .35s, visibility .35s, height .35s] overflow-hidden" style="background-image:url('img/textures/dark-checkers.png'); " id="overlay">      
+        <div class="overlay group fixed bg-white bg-repeat top-0 left-0 w-full h-0 opacity-0  transition-[opacity .35s, visibility .35s, height .35s] overflow-hidden" style="background-image:url('img/textures/hearts.png'); " id="overlay">      
             <nav class="overlay-menu relative h-70 md:py-20 -translate-y-50 text-9xl text-center">
                 <ul class="list-none flex md:block flex-col md:flex-none justify-center  p-0 mx-auto inline-block relative h-full ">
-                    <li class="block mb-4 group-[.open]:animate-[fadeInDown_1s_ease_forwards]  relative opacity-0"><a class="urbana uppercase text-7xl md:text-8xl lg:text-9xl font-bold text-yellow-400 bg-repeat bg-clip-text text-fill-trans bg-yellow-texture hover:bg-red-texture hover:text-red-600" href="rsvp.html">RSVP</a></li>
-                    <li class="block mb-4 group-[.open]:animate-[fadeInDown_1s_ease_forwards] group-[.open]:delay-200	  relative opacity-0"><a class="urbana uppercase text-7xl md:text-8xl lg:text-9xl font-bold text-yellow-400 bg-repeat bg-clip-text text-fill-trans bg-yellow-texture hover:bg-red-texture hover:text-red-600" href="itinerary.html">Itinerary</a></li>
-                    <li class="block mb-4 group-[.open]:animate-[fadeInDown_1s_ease_forwards] group-[.open]:delay-500 relative opacity-0"><a class="urbana uppercase text-7xl md:text-8xl lg:text-9xl font-bold text-yellow-400 bg-repeat bg-clip-text text-fill-trans bg-yellow-texture hover:bg-red-texture hover:text-red-600" href="info.html">Info</a></li>
-                    <li class="block mb-4 group-[.open]:animate-[fadeInDown_1s_ease_forwards] group-[.open]:delay-1000 relative opacity-0"><a class="urbana uppercase text-7xl md:text-8xl lg:text-9xl font-bold text-yellow-400 bg-repeat bg-clip-text text-fill-trans bg-yellow-texture hover:bg-red-texture hover:text-red-600" href="story.html">Our Story</a></li>
+                    <li class="block mb-4 group-[.open]:animate-[fadeInDown_1s_ease_forwards]  relative opacity-0"><a class="barlow uppercase text-7xl md:text-8xl lg:text-9xl font-bold text-yellow-400 bg-repeat bg-clip-text text-fill-trans bg-black-texture hover:bg-green-texture hover:text-red-600" href="rsvp.html">RSVP</a></li>
+                    <li class="block mb-4 group-[.open]:animate-[fadeInDown_1s_ease_forwards] group-[.open]:delay-200	  relative opacity-0"><a class="barlow font-extrabold	 uppercase text-7xl md:text-8xl lg:text-9xl font-bold text-yellow-400 bg-repeat bg-clip-text text-fill-trans bg-black-texture hover:bg-green-texture hover:text-red-600" href="itinerary.html">Itinerary</a></li>
+                    <li class="block mb-4 group-[.open]:animate-[fadeInDown_1s_ease_forwards] group-[.open]:delay-500 relative opacity-0"><a class="barlow font-extrabold	 uppercase text-7xl md:text-8xl lg:text-9xl font-bold text-yellow-400 bg-repeat bg-clip-text text-fill-trans bg-black-texture hover:bg-green-texture hover:text-red-600" href="info.html">Info</a></li>
+                    <li class="block mb-4 group-[.open]:animate-[fadeInDown_1s_ease_forwards] group-[.open]:delay-1000 relative opacity-0"><a class="barlow font-extrabold	 uppercase text-7xl md:text-8xl lg:text-9xl font-bold text-yellow-400 bg-repeat bg-clip-text text-fill-trans bg-black-texture hover:bg-green-texture hover:text-red-600" href="story.html">Our Story</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,10 +46,10 @@
         <!--Home Hero -->
         <div id="home-hero" class="h-screen  pt-4  fixed flex flex-col justify-center">
         <h1 class="sr-only">Allison & Jeff are Getting Married! Nov 18, 2023</h1>
-        <p class="urbana uppercase text-8xl md:text-[180px] lg:text-[275px] leading-none leading-[0.8]"><span class="bg-repeat bg-clip-text text-fill-trans bg-black-texture">Allison</span><span class=" hidden md:inline-block text-yellow-400 text-8xl md:text-9xl lg:text-[175px] pl-4">&</span></p>
+        <p class="barlow font-extrabold	 uppercase text-8xl md:text-[180px] lg:text-[275px] leading-none leading-[0.8]"><span class="bg-repeat bg-clip-text text-fill-trans bg-black-texture">Allison</span><span class=" hidden md:inline-block text-emerald-700 text-8xl md:text-9xl lg:text-[175px] pl-4">&</span></p>
         <div class="flex flex-col lg:flex-row">
-            <p class="urbana uppercase text-8xl md:text-[180px] lg:text-[275px] leading-[0.8] bg-repeat bg-clip-text text-fill-trans bg-black-texture"><span class="inline-block md:hidden bg-yellow-texture text-yellow-400 bg-repeat bg-clip-text text-fill-trans text-8xl md:text-[175px]">&</span> Jeff</p>
-            <p class="urbana uppercase text-5xl md:text-8xl w-full lg:w-1/2 lg:pl-8  bg-repeat bg-clip-text text-fill-trans bg-red-texture text-red-600">Are Getting Married!</p>
+            <p class="barlow font-extrabold	 uppercase text-8xl md:text-[180px] lg:text-[275px] leading-[0.8] bg-repeat bg-clip-text text-fill-trans bg-black-texture"><span class="inline-block md:hidden bg-yellow-texture text-yellow-400 bg-repeat bg-clip-text text-fill-trans text-8xl md:text-[175px]">&</span> Jeff</p>
+            <p class="barlow font-extrabold	 uppercase text-5xl md:text-8xl w-full lg:w-1/2 lg:pl-8  bg-repeat bg-clip-text text-fill-trans bg-berry-texture text-pink-700">Are Getting Married!</p>
             <p class="block mt-4 md:hidden  text-black font-mono font-bold">NOVEMBER 18, 2023 <span class="text-purple-700">*</span> 4PM - LATE</span></p>
             <p class="block mt-2 md:hidden text-black font-mono font-bold">GEORGIA MUSEUM OF ART <span class="text-purple-700">*</span> ATHENS, GA</p>
         </div>
@@ -57,38 +57,77 @@
         <!--End Home Hero -->
         <div class ="hidden md:flex sticky-message fixed bottom-0 right-0 flex flex-col items-end text-xl z-50">
             <p class="p-2 pr-4 bg-black bg-black-texture bg-repeat text-right text-white font-mono font-bold">NOVEMBER 18, 2023 * 4PM - LATE</span>
-            <p class="p-2 pr-4 pb-4 bg-black bg-black-texture bg-repeat text-white font-mono font-bold">GEORGIA MUSEUM OF ART * ATHENS, GA <a class="bg-green-500 hover:bg-red-600 text-white font-bold p-2" href="rsvp.html">RSVP</a></span></p>
+            <p class="p-2 pr-4 pb-4 bg-black bg-black-texture bg-repeat text-white font-mono font-bold">GEORGIA MUSEUM OF ART * ATHENS, GA <a class="bg-emerald-700 hover:purple-900 text-white font-bold p-2" href="rsvp.html">RSVP</a></span></p>
         </div>
 
         <!--More Images-->
         <div id="home-images" class="relative z-40">
+
         <div class="flex justify-start max-w-full mb-16" style="margin-top: 100vh">
-            <span class="p-2 md:p-4 bg-purple-texture">
+            <span class="p-2 md:p-4 bg-orange-texture">
             <img src="img/placeholder-1.jpg" class="max-w-[200px] md:max-w-none"/>
             </span>
         </div>
-        <div class="flex justify-end max-w-full my-16 ">
-            <span class="p-2 md:p-4 bg-purple-texture">
-            <img src="img/placeholder-2.png" class="max-w-[200px] md:max-w-none"/>
-        </span>
+        <div class="flex justify-end max-w-full my-16" style="margin-top: -50vh">
+            <img src="img/hearts/heart-4.png" class="max-w-[100px] md:max-w-none"/>
         </div>
-        <div class="flex justify-center max-w-full my-16 ">
-            <span class="p-2 md:p-4 bg-purple-texture">
-                <img src="img/placeholder-3.jpg" class="max-w-[200px] md:max-w-none"/>
-            </span>
+        <div class="flex justify-center max-w-full my-16">
+            <img src="img/hearts/heart-2.png" class="max-w-[100px] md:max-w-none"/>
         </div>
-        <div class="flex justify-start max-w-full my-16 ">
-            <span class="p-2 md:p-4 bg-purple-texture">
+        <div class="flex justify-start max-w-full my-16" style="margin-top: 35vh">
+            <img src="img/hearts/heart-3.png" class="max-w-[100px] md:max-w-none"/>
+        </div>
+        <div class="flex justify-end max-w-full my-16">
+            <span class="p-2 md:p-4 bg-yellow2-texture">
                 <img src="img/placeholder-2.png" class="max-w-[200px] md:max-w-none"/>
             </span>
         </div>
-        <div class="flex justify-end max-w-full my-16 ">
-            <span class="p-2 md:p-4 bg-purple-texture">
+        <div class="flex justify-center max-w-full my-16" style="margin-top: -30vh">
+            <img src="img/hearts/heart-6.png" class="max-w-[100px] md:max-w-none"/>
+        </div>
+        <div class="flex justify-end max-w-full my-16">
+            <img src="img/hearts/heart-5.png" class="max-w-[100px] md:max-w-none"/>
+        </div>
+        <div class="flex justify-start max-w-full my-16" >
+            <img src="img/hearts/heart-3.png" class="max-w-[100px] md:max-w-none"/>
+        </div>
+        <div class="flex justify-center max-w-full my-16">
+            <span class="p-2 md:p-4 bg-rose-texture">
                 <img src="img/placeholder-3.jpg" class="max-w-[200px] md:max-w-none"/>
             </span>
         </div>
+        <div class="flex justify-start max-w-full my-16">
+            <img src="img/hearts/heart-6.png" class="max-w-[100px] md:max-w-none"/>
+        </div>
+        <div class="flex justify-end max-w-full my-16">
+                <img src="img/hearts/heart-1.png" class="max-w-[100px] md:max-w-none"/>
+        </div>
+
+        <div class="flex justify-start max-w-full my-16 ">
+            <span class="p-2 md:p-4 bg-orange-texture">
+                <img src="img/placeholder-2.png" class="max-w-[200px] md:max-w-none"/>
+            </span>
+        </div>
+        <div class="flex justify-center max-w-full my-16">
+            <img src="img/hearts/heart-7.png" class="max-w-[100px] md:max-w-none"/>
+        </div>
+        <div class="flex justify-end max-w-full my-16">
+            <img src="img/hearts/heart-8.png" class="max-w-[100px] md:max-w-none"/>
+        </div>
+        <div class="flex justify-end max-w-full my-16 ">
+            <span class="p-2 md:p-4 bg-rose-texture">
+                <img src="img/placeholder-3.jpg" class="max-w-[200px] md:max-w-none"/>
+            </span>
+        </div>
+        <div class="flex justify-start max-w-full my-16">
+            <img src="img/hearts/heart-9.png" class="max-w-[100px] md:max-w-none"/>
+        </div>
+        <div class="flex justify-center max-w-full my-16">
+            <img src="img/hearts/heart-1.png" class="max-w-[100px] md:max-w-none"/>
+        </div>
+
         <div class="flex justify-center max-w-full my-16 ">
-            <span class="p-2 md:p-4 bg-purple-texture">
+            <span class="p-2 md:p-4 bg-yellow2-texture">
                 <img src="img/placeholder-1.jpg" class="max-w-[200px] md:max-w-none"/>
             </span>
         </div>
@@ -113,3 +152,17 @@
 </script>
 </body>
 </html>
+
+<script>
+    function parallax() {
+	var s = document.getElementById("floater");
+  var yPos = 0 - window.pageYOffset/4;	
+  s.style.top = 2 + yPos + "%";
+  
+  //alert(yPos);
+}
+
+window.addEventListener("scroll", function(){
+	parallax();	
+});
+</script>

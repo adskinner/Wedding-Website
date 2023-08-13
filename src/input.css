@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .urbana {
+        font-family: "urbana", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+    .text-fill-trans {
+        -webkit-text-fill-color: transparent;
+    }
+    .bg-black-texture {
+        background-image:url('/img/textures/black-grain.jpg');
+    }
+    .bg-red-texture {
+        background-image:url('/img/textures/red-grain.jpg');
+    }
+    .bg-purple-texture {
+        background-image:url('/img/textures/purple-grain.png');
+    }
+    .bg-yellow-texture {
+        background-image:url('/img/textures/yellow-grain.jpg');
+    }
+    .bg-berry-texture {
+        background-image:url('/img/textures/berry-grain.jpg');
+    }
+    .bg-orange-texture {
+        background-image:url('/img/textures/orange-grain.jpg');
+    }
+    .bg-yellow2-texture {
+        background-image:url('/img/textures/yellow2-grain.jpg');
+    }
+    .bg-rose-texture {
+        background-image:url('/img/textures/rose-grain.jpg');
+    }
+    .bg-green-texture {
+        background-image:url('/img/textures/green.jpg');
+    }
+    
+}
